@@ -2,7 +2,7 @@ GET http://localhost:3000/subscribers
 
 ###
 
-GET http://localhost:3000/subscribers/61fad27656e7fe82ad082053
+GET http://localhost:3000/subscribers/61fad27656e7fe82ad182053
 
 ###
 
@@ -12,4 +12,21 @@ Content-Type: application/json
 {
     "name": "Anu",
     "subscribedToChannel": "web simplified"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/61fae07f5e97e49fd1829ed6
+
+###
+
+DELETE http://localhost:3000/subscribers
+
+###
+
+PATCH http://localhost:3000/subscribers/61fb71274a5ac05f65565293
+Content-Type: application/json
+
+{
+    "name": "New Name"
 }
